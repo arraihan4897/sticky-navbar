@@ -1,0 +1,121 @@
+body{
+    background-color: darkslategray;
+   margin: auto;
+}
+
+.top-Container {
+    color: aliceblue;
+    height: 100vh;
+    background-size: cover;
+  background-position: center;
+  border-radius: 0px 120px 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow:  5px solid aliceblue;
+  background-image: url("https://images.unsplash.com/photo-1578091879915-33ee869e2cd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1602&q=80");
+}
+.top-Container h1 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(194, 151, 234);
+
+}
+h1{
+    padding-top:150px;
+    font-weight: 600;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px;
+    text-decoration:wavy;
+   
+}
+
+.navbar{
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    position:fixed;;
+    transition: .8s;
+}
+
+.bottomContainer{
+    margin: 50px;
+    color: azure;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(102, 102, 238);
+}
+.navbar a:hover {
+    margin: auto;
+   
+    padding: 17px;
+    color: rgb(78, 13, 119);
+}
+
+.navbar.active{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+.navbar.active ul li a{
+color: white;
+
+}
+.header{
+    width: 100%;
+}
+
+
+
+/* button Style */
+
+
+.bttn{
+    
+    position: relative;;
+    margin-top: 100px;
+    background-color: pink;
+    color: rgb(34, 57, 57);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0,.3);
+   overflow: hidden;
+}
+.img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+
+.bttn::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 1px;
+    height: 1px;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition:width 0.5s, height 0.5s;
+
+}
+.bttn:hover::before{
+    width:400px;
+    height:400px;
+
+}
